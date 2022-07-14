@@ -1,0 +1,2 @@
+# patikaJava
+Patika Java ödevleri
