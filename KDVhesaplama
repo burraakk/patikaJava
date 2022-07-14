@@ -1,5 +1,3 @@
-package Odev01;
-
 import java.util.Scanner;
 
 public class C02_KDVhesaplama {
