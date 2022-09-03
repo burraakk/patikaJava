@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class C01_NotOrtalamasi {
+    /*Java ile Matematik, Fizik, Kimya, Türkçe, Tarih, Müzik derslerinin sınav puanlarını kullanıcıdan alan
+    ve ortalamalarını hesaplayıp ekrana bastırılan programı yazın.
+    Ödev:
+    Aynı program içerisinde koşullu ifadeler kullanılarak, eğer kullanıcının ortalaması
+    60'dan büyük ise ekrana "Sınıfı Geçti" , küçük ise "Sınıfta Kaldı" yazsın.
+    Not : If ve Else kullanılmayacak...
+     */
+   
+   public static void main(String[] args) {
+        Scanner scan  = new Scanner(System.in);
+        
+        System.out.print("Matematik sinav notunuzu giriniz : ");
+        double matematik = scan.nextDouble();
+        System.out.print("Fizik sinav notunuzu giriniz : ");
+        double fizik = scan.nextDouble();
+        System.out.print("Kimya sinav notunuzu giriniz : ");
+        double kimya = scan.nextDouble();
+        System.out.print("Turkce sinav notunuzu giriniz : ");
+        double turkce = scan.nextDouble();
+        System.out.print("Tarih sinav notunuzu giriniz : ");
+        double tarih = scan.nextDouble();
+        System.out.print("Muzik sinav notunuzu giriniz : ");
+        double muzik = scan.nextDouble();
+
+        double ortalama = (matematik+fizik+kimya+turkce+tarih+muzik)/6;
+        boolean kontrol = ortalama > 60;
+       
+       System.out.println(kontrol ? "Sinifi Gecti": "Sinifta Kaldi");
+    }
+}
